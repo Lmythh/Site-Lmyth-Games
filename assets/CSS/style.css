@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 2100;
+    max-height: 2100;
+    text-align: top;
+  }
+.header {
+background-image: url(../img/fundo.png);
+text-align: center;
+  padding: 30px;
+  color: aliceblue;
+}
+
+.topnav {
+    overflow: hidden;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    border: 1px solid red;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Arial, sans-serif, Helvetica ;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #8b8989;
+    color: black;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 15%;
+    min-height: 600px;
+    max-height: 600px;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    color: white;
+    border: 1px solid red;
+    background-attachment: fixed;
+    font-family:monospace,Arial, Helvetica, sans-serif;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 85%;
+    min-height: 600px;
+    max-height: 600px;
+    background-color: #272626;
+background-size: 58px 58px;
+background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px,
+0px 36px, 4px 2px, 29px 6px, 33px 30px;
+background-image:
+linear-gradient(335deg, #2c2b2b 23px, transparent 23px),
+linear-gradient(155deg, #2c2b2b 23px, transparent 23px),
+linear-gradient(335deg, #2c2b2b 23px, transparent 23px),
+linear-gradient(155deg, #2c2b2b 23px, transparent 23px),
+
+linear-gradient(335deg, #2c2b2b 10px, transparent 10px),
+linear-gradient(155deg, #2c2b2b 10px, transparent 10px),
+linear-gradient(335deg, #2c2b2b 10px, transparent 10px),
+linear-gradient(155deg, #2c2b2b 10px, transparent 10px);
+    color: white;
+    border: 1px solid red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+.footer {
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: 'Trebuchet MS', Arial, 'Franklin Gothic Medium', 'Arial Narrow', 'Arial Narrow Bold', Impact ;
+}
+.borda {
+  background-color: black;
+  width: 320px;
+  height: 170px;
+  border: 10px solid;
+  border-image-source: linear-gradient(black, white, blue, green, red, purple, yellow, silver,black);
+  border-image-slice: 10;
+}
+h2{
+  text-shadow: red 2px 2px 4px;
+}
